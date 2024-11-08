@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --Body-Color:#EEEBDD;
+    --Font-Body: Lalezar;
+    --Sub-Text-Color:#1B1717A6;
+    --Main-Text-Color: #1B1717;
+    --Accent-Color: #CE1212;
+    --Hover-Accent-Color: #810000;
+}
+body{
+    margin: 0;
+    background-color: var(--Body-Color);
+    font-family: var(--Font-Body);
+}
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+header{
+    text-align: center;
+    margin-top: 30px;
+}
+header a {
+    display: inline-block;
+}
+.col-second {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-section, .second-section, .third-section {
+    width: 340px;
+    height: 350px;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.col-first {
+    padding-top: 20px;
+}
+.customers {
+   width: 230px;
+   height: 24px;
+   padding-right: 12px;
+}
+.customers img {
+    margin-right: -10px;
+}
+.customers span{
+    padding-right: 10px;
+}
+.text {
+    margin-right: -6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.88px;
+    text-align: right;
+    color: var(--Sub-Text-Color);
+}
+.row {
+    display: flex;
+}
+.attention {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: right;
+    color: var(--Main-Text-Color);
+    padding-top: 15px;
+    margin: 0;
+}
+.desc-user {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.88px;
+    text-align: right;
+    color: var(--Sub-Text-Color);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: Vazirmatn;
+}
+.buttons {
+   margin-right: 20%;
+}
+.button-service {
+    width: 204px;
+    height: 38px;
+    padding: 7px 30px 7px 30px;
+    border: solid 1px var(--Sub-Text-Color);
+    border-radius: 35px;
+    text-align: center;
+    color: var(--Sub-Text-Color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.88px;
+    font-family: Vazirmatn;
+}
+.button-service:hover {
+    color: var(--Main-Text-Color);
+    border-color: var(--Main-Text-Color);
+}
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+}
+.button-order {
+    width: 204px;
+    height: 38px;
+    padding: 8px 40px 8px 32px;
+    border: solid 1px var(--Accent-Color);
+    border-radius: 35px;
+    text-align: center;
+    background-color: var(--Accent-Color);
+    margin-top: 10px;
+}
+.button-order:hover {
+    background-color: var(--Hover-Accent-Color);
+    border: var(--Hover-Accent-Color);
+}
+.order-text {
+    padding-right: 5px;
+    font-family: Vazirmatn;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.88px;
+    text-align: center;
+    color: var(--Body-Color);
+}
+.button-order img{
+    padding-top: 2px;
+}
+.button-order:hover img {
+    filter: brightness(10);
+}
+.second-section {
+    margin-top: 60px;
+}
+.second-section-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Main-Text-Color);
+    font-family: Vazirmatn;
+    width: 318px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:3px 0px;
+}
+.second-section {
+    text-align: center;
+    height: 151px;
+}
+.flags {
+    margin-top: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.country-flag img {
+    display: inline-block;
+}
+.country-flag {
+    font-family: Vazirmatn;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.88px;
+    color: var(--Sub-Text-Color);
+}
+.third-section .attention {
+    padding-bottom: 25px;
+}
+.third-section li {
+    text-align: center;
+}
+.third-section img {
+    display: block;
+}
+.name-shoes {
+    font-family: Vazirmatn;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--Main-Text-Color);
+    padding-top: 10px;
+}
+.third-section span {
+    font-family: Vazirmatn;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.88px;
+    color: var(--Sub-Text-Color);
+}
+.information-shoe {
+    padding-top: 15px;
+}
+.button-allProduct {
+    margin-right: 20%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.button-allProduct a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:500px) {
+    .col-second {
+        display: contents;
+    }
+    .first-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .col-second img {
+        display: block;
+        margin-right: -40px;
+        filter: drop-shadow(15px 30px 60px #00000033);
+        flex-shrink: 1;
+    }
+    .col-first {
+        width: 620px;
+        height: 286px;
+    }
+    .statement {
+        padding-left: 80px;
+    }
+    .buttons {
+        width: 415px;
+        height: 38px;
+        display: flex;
+        gap: 10px;
+        margin-right: 0;
+        flex-direction: row-reverse;
+    }
+    .buttons a {
+        display: inline-block;
+    }
+    .button-order {
+        margin-top: 0;
+    }
+    .desc-user {
+        width: 430px;
+    }
+    .second-section {
+        width: 100%;
+        text-align: center;
+    }
+    .flags {
+        width: 418px;
+        height: 116px;
+        padding: 3px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flags ul {
+        direction: ltr;
+    }
+    .border-height {
+        border-right: solid 1px #1B17171A; 
+        height: 64px;
+    }
+    .second-section-text {
+        padding-bottom: 20px;
+    }
+    .third-section {
+        width: 100%;
+        padding: 0px 5px;
+    }
+    .third-section ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .information-shoe {
+        width: 266px;
+        height: 312px;
+    }
+    .information-shoe img {
+        width: 266.25px;
+        height: 250px;
+        border-radius: 12px;
+        object-fit: contain;
+    }
+    .button-allProduct {
+       width: 100%;
+       margin-right: auto;
+       margin-left: auto;
+       margin-top: 50px;
+    }
+    .button-service {
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+  
+
+    
+}
